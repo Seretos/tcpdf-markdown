@@ -30,6 +30,7 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     libjpeg62-turbo-dev \
     libpng-dev \
+    git \
     && rm -rf /tmp/* \
     && rm -rf /var/list/apt/* \
     && rm -rf /var/lib/apt/lists/* \
@@ -54,6 +55,8 @@ RUN pecl install xdebug \
     && echo "xdebug.start_with_request=yes" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.idekey=PHPSTORM" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "error_reporting=E_ALL" >> /usr/local/etc/php/conf.d/error_reporting.ini
+
+RUN git config --global --add safe.directory /github/workspace
 
 ENTRYPOINT ["/bin/sh", "-c"]
 CMD ["bash"]
