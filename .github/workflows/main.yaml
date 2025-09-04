@@ -9,5 +9,9 @@ jobs:
       - name: build docker image
         uses: ./.github/actions/default
       - run: composer install
-      - run: XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-clover clover.xml
-      - run: vendor/bin/php-coveralls -v
+      - name: run phpunit with coverage
+        run: XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-clover clover.xml
+      - name: upload coverage to coveralls
+        run: vendor/bin/php-coveralls -v
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
