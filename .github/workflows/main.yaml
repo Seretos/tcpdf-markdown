@@ -10,5 +10,4 @@ jobs:
         uses: ./.github/actions/default
       - run: composer install
       - run: XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-clover clover.xml
-        env: COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: vendor/bin/php-coveralls -v
