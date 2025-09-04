@@ -1,0 +1,5 @@
+.idea
+examples/*.pdf
+examples/*.html
+phpunit.xml
+.phpunit.result.cache

@@ -1,0 +1,27 @@
+{
+  "name": "seretos/tcpdf-markdown",
+  "description": "render markdown with tcpdf",
+  "keywords": [
+    "tcpdf",
+    "markdown"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Arne von Appen",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "tecnickcom/tcpdf": "^6.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "seretos\\TCPDFMarkdown\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.3"
+  }
+}
