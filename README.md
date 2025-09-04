@@ -1,4 +1,5 @@
 [![.github/workflows/main.yaml](https://github.com/Seretos/tcpdf-markdown/actions/workflows/main.yaml/badge.svg)](https://github.com/Seretos/tcpdf-markdown/actions/workflows/main.yaml)
+[![Coverage Status](https://coveralls.io/repos/github/Seretos/tcpdf-markdown/badge.svg?branch=main)](https://coveralls.io/github/Seretos/tcpdf-markdown?branch=main)
 
 # PHP Markdown to TCPDF Library
 
