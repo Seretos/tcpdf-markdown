@@ -4,3 +4,4 @@ examples/*.html
 phpunit.xml
 .phpunit.result.cache
 vendor/
+clover.xml

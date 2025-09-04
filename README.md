@@ -1,3 +1,5 @@
+[![.github/workflows/main.yaml](https://github.com/Seretos/tcpdf-markdown/actions/workflows/main.yaml/badge.svg)](https://github.com/Seretos/tcpdf-markdown/actions/workflows/main.yaml)
+
 # PHP Markdown to TCPDF Library
 
 This PHP library allows you to insert Markdown text directly into a TCPDF document. It provides extensive control over page breaks and the exact placement of content within a page.
