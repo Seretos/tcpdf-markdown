@@ -6,6 +6,7 @@
     "markdown"
   ],
   "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "Arne von Appen",

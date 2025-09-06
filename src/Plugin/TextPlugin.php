@@ -15,7 +15,7 @@ class TextPlugin extends AbstractPlugin
     public function parse(string $markdown, int $position): ?PluginTokenResult
     {
         $substr = substr($markdown, $position);
-        if (preg_match('/^(?:[A-Za-z0-9]+|[*_~]+|\/\*)/', $substr, $matches)) {
+        if (preg_match('/^(?:[\p{L}\p{N}]+|[*_~]+|\/\*)/u', $substr, $matches)) {
             $word = $matches[0];
             $tokens = [
                 new MarkdownToken('TEXT', $word)

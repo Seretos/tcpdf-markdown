@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200" role="img" aria-label="Markdown to TCPDF">
+    <title>Markdown → TCPDF</title>
+
+    <defs>
+        <style type="text/css"><![CDATA[
+      .font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight:700; letter-spacing:0.02em; }
+      .shadow { filter: drop-shadow(0 3px 6px rgba(0,0,0,0.18)); }
+    ]]></style>
+    </defs>
+
+    <!-- MD box -->
+    <g transform="translate(40,30)" class="shadow">
+        <rect x="0" y="0" width="140" height="140" rx="16" ry="16" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+        <text x="70" y="70" text-anchor="middle" dominant-baseline="middle" class="font" font-size="64" fill="#111111">MD</text>
+    </g>
+
+    <!-- TCPDF box -->
+    <g transform="translate(380,30)" class="shadow">
+        <rect x="0" y="0" width="180" height="140" rx="14" ry="14" fill="#d32f2f" stroke="#801b1b" stroke-width="3"/>
+        <text x="90" y="70" text-anchor="middle" dominant-baseline="middle" class="font" font-size="48" fill="#ffffff">TCPDF</text>
+    </g>
+
+    <!-- arrow: shorter, centered between the boxes -->
+    <!-- Freiraum = 200px; wir lassen links 40px, Pfeil 120px, rechts 40px -->
+    <g transform="translate(220,100)">
+        <!-- shaft -->
+        <rect x="0" y="-12" width="90" height="24" fill="#444444"/>
+        <!-- head -->
+        <polygon points="90,-24 120,0 90,24" fill="#444444"/>
+    </g>
+</svg>
